@@ -100,3 +100,36 @@ header {
   .contenido.active {
     display: block;
   }
+
+  table {
+    width: 100%;
+    margin: 20px 0;
+  }
+  table, th, td {
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+  }
+  th {
+    padding: 8px;
+    border-bottom: solid;
+  }
+  tbody tr:nth-child(odd) {
+     background-color: #ACFA58; /* Color claro para el hover de editar */
+  }
+  tbody tr:nth-child(even) {
+     color: white;
+     background-color: #121212;
+  }
+  tr:hover {
+     background-color: #F3F781; /* Color más claro para el hover de editar */
+  }
+  .btn-editar {
+     background-color:#CCFF00; /* Color limón para el botón de editar */
+  }
+  .btn-eliminar {
+     background-color:#FF6347; /* Color rojo tomate para el botón de eliminar */
+  }
+  .btn-guardar {
+     background-color:#FF4500; /* Color más oscuro para el hover */
+  }
+  

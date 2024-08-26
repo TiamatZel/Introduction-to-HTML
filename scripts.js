@@ -28,6 +28,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     var linkEstudiantes = document.getElementById("linkEstudiantes");
     var contenedorEstudiantes = document.getElementById("contenedorEstudiantes");
+    var linkAsignaturas = document.getElementById("linkAsignaturas");
+    var contenedorAsignaturas = document.getElementById("contenedorAsignaturas");
 
     linkEstudiantes.addEventListener("click", function(event) {
         event.preventDefault();
@@ -35,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
         contenedorAsignaturas.classList.remove("active");
     });
 
-    LinkAsignaturas.addEventListener("click", function(event) {
+    linkAsignaturas.addEventListener("click", function(event) {
         event.preventDefault();
         contenedorAsignaturas.classList.add("active");
         contenedorEstudiantes.classList.remove("active");

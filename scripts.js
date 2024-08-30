@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
             var username = document.getElementById("username").value;
             var password = document.getElementById("password").value;
 
-            if(usuario == "admin" && password == "1234"){
+            if(username == "admin" && password == "1234"){
                 window.location.href = "dashboard.html";
             } else {
                 alert("Usuario o contraseña incorrectos");
@@ -15,12 +15,12 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    var registerForm = document.getElementById("registerForm");
-    if(registerForm){
-        registerForm.addEventListener("submit", function(event){
+    var registroForm = document.getElementById("registroForm");
+    if(registroForm){
+        registroForm.addEventListener("submit", function(event) {
             event.preventDefault();
             var newUser = document.getElementById("newUser").value;
-            var newPassword = document.getElementById("newpassword").value;
+            var newPassword = document.getElementById("newPassword").value;
             
             alert("Usuario registrado: " + newUser);
             window.location.href = "index.html";
